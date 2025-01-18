@@ -489,11 +489,6 @@ body.dark-theme #moon-icon {
   transform: translateY(-5px);
   box-shadow: 0 15px 25px var(--color), 0 8px 12px var(--color);
 }
-
-.skills .container .row div i {
-  font-size: 80px;
-  color: var(--col);
-}
 .skills .container .row div span {
   font-size: 25px;
   font-weight: bold;
@@ -519,10 +514,6 @@ body.dark-theme #moon-icon {
   .skills .container .row div span {
     font-size: 12px;
   }
-  .skills .container .row div i {
-    font-size: 55px;
-    color: var(--color);
-  }
 
   .skills .container .heading {
     font-size: 1.5em;
@@ -535,10 +526,6 @@ body.dark-theme #moon-icon {
     height: 107px;
     font-size: 0.9em;
   }
-  .skills .container .row div span {
-    font-size: 9px;
-  }
-
   .skills .container .heading {
     font-size: 1.2em;
   }
