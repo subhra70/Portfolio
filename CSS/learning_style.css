@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: url("../images/bg3.jpg"); */
+  font-family: "Raleway", sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: rgb(163, 95, 227);
+  position: relative;
+}
+
+.site-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-logo img {
+  border-radius: 50%;
+  margin-top: 2px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 0 2px;
+  background-color: #007bff;
+  border-radius: 10px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-bar {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 60px;
+  }
+
+  .menu-bar {
+    display: block;
+    z-index: 1001;
+  }
+
+  .nav-list {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu-toggle:checked ~ .nav-list {
+    display: flex;
+  }
+
+  .menu-bar {
+    order: 1;
+  }
+}
+/*End of Header */
+
+/* Start main content */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container1,
+.container2 {
+  width: 100%;
+  color: black;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container1 .container1-heading,
+.container2 .container2-heading {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container1 .row,
+.container2 .row {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Adds space between cards */
+}
+
+.container1 .card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #33333352;
+  padding: 1rem;
+  width: 480px;
+  max-width: 90%; /* Prevents cards from being too wide on small screens */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.container2 .card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #33333352;
+  padding: 1rem;
+  width: 350px;
+  max-width: 90%; /* Prevents cards from being too wide on small screens */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+.arrow .left-arrow i,
+.arrow .right-arrow i{
+    cursor: pointer;
+    font-size: 24px;
+}
+.container1 .card:hover,
+ .container2 .card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.container1 .card .img img,
+.container2 .card .img img {
+  border-radius: 8px;
+  object-fit: cover;
+  width: 100%; /* Ensures images are responsive */
+}
+
+.container1 .card .ins-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.container1 .card .stream,
+.container1 .card .duration,
+.container1 .card .status,
+.container2 .card .status {
+  font-size: 16px;
+  margin-top: 0.3rem;
+}
+
+.container1 .card .status button,
+.container2 .card .status button {
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.container2 .row .card .channel-link a{
+    text-decoration: none;
+    color: blue;
+}
+.container2 .row .card .channel-link a:hover{
+    color: green;
+}
+.container1 .card .status button:hover,
+.container2 .card .status button:hover {
+  transform: scale(1.05);
+}
+
+/* First two cards: Light Red Button */
+.container1 .card:nth-child(1) .status button,
+.container1 .card:nth-child(2) .status button,
+.container2 .card:nth-child(1) .status button {
+  background-color: #e45050;
+  color: white;
+}
+
+.container1 .card:nth-child(1) .status button:hover,
+.container1 .card:nth-child(2) .status button:hover,
+.container2 .card:nth-child(1) .status button:hover {
+  background-color: #e60000;
+}
+
+/* Last card: Light Green Button */
+.container1 .card:nth-child(3) .status button,
+.container2 .card:nth-child(2) .status button,
+.container2 .card:nth-child(3) .status button {
+  background-color: #4ecb4e;
+  color: white;
+}
+
+.container1 .card:nth-child(3) .status button:hover,
+.container2 .card:nth-child(2) .status button:hover,
+.container3 .card:nth-child(3) .status button:hover {
+  background-color: #009900;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container1 .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container1 .card {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container1 .container1-heading {
+    font-size: 24px;
+  }
+
+  .card {
+    width: 95%;
+  }
+
+  .card .ins-name {
+    font-size: 18px;
+  }
+
+  .card .status button {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container1 {
+    margin-top: 3rem;
+  }
+
+  .container1 .container1-heading {
+    font-size: 22px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  .card .ins-name {
+    font-size: 16px;
+  }
+
+  .card .status button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+footer {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  background: linear-gradient(45deg, #1a237e, #283593);
+  color: #ffffff;
+  padding: 40px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: transparent;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .element1,
+footer .element2,
+footer .element3 {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+footer h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+footer h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 50px;
+  height: 2px;
+  background-color: #64b5f6;
+}
+
+footer p {
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+footer .useful-links {
+  list-style: none;
+  padding: 0;
+}
+
+footer .useful-links li {
+  margin-bottom: 10px;
+}
+
+footer .useful-links a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+footer .useful-links a:hover {
+  color: #64b5f6;
+  transform: translateX(5px);
+}
+
+footer .social-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: flex-start;
+}
+
+footer .social-links li {
+  margin-right: 15px;
+}
+
+footer .social-links a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+footer .social-links a:hover {
+  color: #64b5f6;
+  transform: scale(1.2);
+}
+
+footer .copyright {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+  color: #b0bec5;
+}
+
+@media screen and (max-width: 768px) {
+  footer .row {
+    flex-direction: column;
+  }
+
+  footer .element1,
+  footer .element2,
+  footer .element3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  footer .social-links {
+    justify-content: center;
+  }
+}

@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Contact Me</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -13,8 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="CSS/main_style.css" />
-    <title>Subhra-site</title>
+    <link rel="stylesheet" href="CSS/contact_style.css" />
   </head>
   <body>
     <header class="header">
@@ -32,69 +30,53 @@
         <ul class="nav-list">
           <li class="nav-item"><a href="index.html">Home</a></li>
           <li class="nav-item"><a href="learning.html">Learning Journey</a></li>
-          <li class="nav-item"><a href="myWork.html">Show my work</a></li>
+          <li class="nav-item"><a href="myWork.html">Show my Work</a></li>
           <li class="nav-item"><a href="contact.html">Contact Me</a></li>
         </ul>
       </nav>
     </header>
-    <main class="main-content" id="main">
+    <main class="main-content">
+      <h2>Contact Details</h2>
       <div class="container">
-        <div class="greet">
-          <div>Hello I am Subhra Shaw</div>
+        <div class="column1">
+          <form action="" onsubmit="sendMessage(event)">
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter Your Name:"
+              required
+            />
+            <input
+              type="email"
+              id="mail"
+              placeholder="Enter Your Email:"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Enter Your Message..."
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
         </div>
-        <div class="profession">
-          <div id="profession-text">A</div>
+        <div class="column2">
+          <div class="wapp">
+            <span><i class="fa-brands fa-whatsapp"></i></span>
+            <span>+91 7044493255</span>
+          </div>
+          <div class="mail">
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <span>shawsubhra68@gmail.com</span>
+          </div>
+          <div class="location">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span>Bhabanipur, Tarakeswar, Hooghly</span>
+          </div>
         </div>
-        <ul class="social-list">
-          <a href="https://www.facebook.com/share/19xxbEYHHw/"
-            ><li class="social-item"><i class="fa-brands fa-facebook"></i></li
-          ></a>
-          <a href="https://www.linkedin.com/in/subhra-shaw-2a45a8260/"
-            ><li class="social-item"><i class="fa-brands fa-linkedin"></i></li
-          ></a>
-          <a href="https://github.com/subhra70"
-            ><li class="social-item"><i class="fa-brands fa-github"></i></li
-          ></a>
-        </ul>
-        <a
-          href="https://drive.google.com/file/d/1PtKJNVMNEaLB8bC-Q04ZPH2L_N5QAJkd/view?usp=sharing"
-          ><button class="resume">View My Resume</button></a
-        >
       </div>
     </main>
-    <section class="about" id="about">
-      <div class="about-heading">About Me</div>
-      <div class="container">
-        <div class="my-details">
-          <p>
-            I am <b>Subhra Shaw</b>, currently pursuing a
-            <b>Master of Computer Application</b> from
-            <a href="https://jadavpuruniversity.in/"
-              ><b>Jadavpur University</b></a
-            >. I have completed my graduation from
-            <a href="http://singurgovtcollege.org/"
-              ><b>Government General Degree College, Singur</b></a
-            >
-            under the
-            <a href="https://www.buruniv.ac.in/Demo/index_bucc.php"
-              ><b>University of Burdwan</b></a
-            >. <br /><br />
-            I am a passionate <b>Java Developer</b> and have solved over
-            <b>300+ problems</b> on various platforms like <b>GeeksForGeeks</b>,
-            <b>LeetCode</b>, and <b>HackerRank</b>.
-          </p>
-        </div>
-        <div class="my-photo">
-          <img
-            src="images/photo.jpg"
-            alt="Subhra Shaw"
-            height="300"
-            width="300"
-          />
-        </div>
-      </div>
-    </section>
-
     <footer>
       <div class="container">
         <div class="row">
@@ -178,7 +160,11 @@
       </div>
       <div class="copyright">© 2025 Subhra's Site. All Rights Reserved.</div>
     </footer>
-
-    <script src="JS/main.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    ></script>
+    <script src="JS/contactScript.js"></script>
   </body>
 </html>

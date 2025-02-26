@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning-journey</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="CSS/work_style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="container">
+        <div class="site-details">
+          <div class="site-logo">
+            <img src="images/subhra.jpg" alt="Logo" height="50" width="50" />
+          </div>
+          <h3 class="site-name">SUBHRA</h3>
+        </div>
+
+        <input type="checkbox" id="menu-check" class="menu-toggle" />
+        <label for="menu-check" class="menu-bar">&#9776;</label>
+
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="learning.html">Learning Journey</a></li>
+          <li class="nav-item"><a href="myWork.html">Show my Work</a></li>
+          <li class="nav-item"><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <div class="container">
+        <div class="left-part">
+          <div class="img-box"></div>
+          <div class="proj-name"></div>
+          <div class="description"></div>
+          <div class="buttons"></div>
+        </div>
+        <div class="right-part">
+          <div class="row" onclick="displayLeft(0)">
+            <div class="image">
+              <img
+                src="images/project1.png"
+                alt="proj1-img"
+                height="150"
+                width="200"
+              />
+            </div>
+            <div class="details">
+              <div class="proj-name">Document Management System</div>
+              <div class="duration">
+                <b>Technology:</b>&nbsp;&nbsp;<i
+                  >HTML, CSS, JavaScript, PHP, MySQL</i
+                >
+              </div>
+              <div class="desc">
+                <p>
+                  <b>Description:</b>&nbsp;&nbsp; A Document Management System for an institution to manage their individual, departmental Document
+                  such that they can store and retrieve the details when necessary.
+                </p>
+              </div>
+              <span id="users"><i class="fa-solid fa-user-plus"></i>&nbsp; 60+ Active users</span>
+              <div class="buttons">
+                <a href="https://repository.singurgovtcollege.org/">
+                  <button id="btn1">Site Link</button>
+                </a>
+                <a href="#">
+                  <button id="btn2">Check More</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="row" onclick="displayLeft(1)">
+            <div class="image">
+              <img
+                src="images/photo.jpg"
+                alt="proj1-img"
+                height="150"
+                width="200"
+              />
+            </div>
+            <div class="details">
+              <div class="proj-name">Hotel Management System</div>
+              <div class="duration">
+                <b>Technology:</b>&nbsp;&nbsp;<i
+                  >HTML, CSS, JavaScript, PHP, MySQL</i
+                >
+              </div>
+              <div class="desc">
+                <p>
+                  <b>Description:</b>&nbsp;&nbsp; Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Quos atque ipsa, amet
+                  accusantium sapiente nostrum numquam esse impedit! Facere sint
+                  necessitatibus illo odit quaerat iusto, quisquam eum quo at
+                  eveniet quam facilis recusandae ab veniam incidunt a vitae
+                  exercitationem, enim quia dignissimos magnam!
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="https://repository.singurgovtcollege.org/">
+                  <button class="btn1">Site Link</button>
+                </a>
+                <a href="images/subhra.jpg">
+                  <button class="btn2">Check More</button>
+                </a>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="row" onclick="displayLeft(2)">
+            <div class="image">
+              <img
+                src="images/photo.jpg"
+                alt="proj1-img"
+                height="150"
+                width="200"
+              />
+            </div>
+            <div class="details">
+              <div class="proj-name">Hospital Management System</div>
+              <div class="duration">
+                <b>Technology:</b>&nbsp;&nbsp;<i
+                  >HTML, CSS, JavaScript, PHP, MySQL</i
+                >
+              </div>
+              <div class="desc">
+                <p>
+                  <b>Description:</b>&nbsp;&nbsp; Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Quos atque ipsa, amet
+                  accusantium sapiente nostrum numquam esse impedit! Facere sint
+                  necessitatibus illo odit quaerat iusto, quisquam eum quo at
+                  eveniet quam facilis recusandae ab veniam incidunt a vitae
+                  exercitationem, enim quia dignissimos magnam!
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="https://repository.singurgovtcollege.org/">
+                  <button class="btn1">Site Link</button>
+                </a>
+                <a href="images/subhra.jpg">
+                  <button class="btn2">Check More</button>
+                </a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="element1">
+            <h4>About Me</h4>
+            <p>
+              I'm a passionate web developer dedicated to creating stunning and
+              functional websites for your organization. Let's bring your
+              digital vision to life!
+            </p>
+          </div>
+          <div class="element2">
+            <h4>Quick Links</h4>
+            <ul class="useful-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="learning.html">Learning Journey</a></li>
+              <li><a href="myWork.html">Show my work</a></li>
+              <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+          </div>
+          <div class="element3">
+            <h4>Connect With Me</h4>
+            <ul class="social-links">
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100087045308921&mibextid=ZbWKwL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/subhra-shaw-2a45a8260/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/subhra70"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.hackerrank.com/profile/shawsubhra68"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-hackerrank"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://leetcode.com/u/shawsubhra68/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-code"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.geeksforgeeks.org/user/shawsubt2id/?ref=header_profile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-laptop-code"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© 2025 Subhra's Site. All Rights Reserved.</div>
+    </footer>
+    <script src="JS/work_js.js"></script>
+  </body>
+</html>
