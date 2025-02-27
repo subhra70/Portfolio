@@ -111,116 +111,120 @@ body {
 }
 /*End of Header */
 
-
 .main-content {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 
 h2 {
   margin-top: 3rem;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2rem;
-    color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
 }
 
 /* Container Layout */
 .main-content .container {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
 }
 
 /* Left Column - Contact Form */
 .column1 {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    max-width: 500px;
-    height: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 500px;
+  height: 400px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
+form input,
+form textarea {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
 }
 
 form textarea {
-    height: 100px;
-    resize: none;
+  height: 100px;
+  resize: none;
 }
 
 form button {
-    background: #007bff;
-    color: #fff;
-    border: none;
-    padding: 12px;
-    font-size: 1rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 form button:hover {
-    background: #0056b3;
+  background: #0056b3;
 }
 
 /* Right Column - Google Map */
 .column2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    max-width: 500px;
-    height: 400px;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 500px;
+  height: 400px;
+  padding: 20px;
 }
-.column2 .wapp, .column2 .mail, .column2 .location{
+.column2 .wapp,
+.column2 .mail,
+.column2 .location {
   display: flex;
   gap: 10px;
 }
-.column2 span{
+.column2 span {
   font-size: 24px;
-}
-
-#map {
-    width: 100%;
-    height: 300px;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .main-content .container {
-        flex-direction: column;
-        align-items: center;
-    }
+  .main-content .container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .column1, .column2 {
-        width: 90%;
-    }
-
-    #map {
-        height: 250px;
-    }
+  .column1,
+  .column2 {
+    width: 90%;
+  }
+  .column2 span {
+    font-size: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .column2 span {
+    font-size: 18px;
+  }
+}
+@media (max-width: 320px) {
+  .column2 span {
+    font-size: 14px;
+  }
 }
 
 footer {
@@ -264,7 +268,7 @@ footer h4 {
 }
 
 footer h4::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -332,6 +336,9 @@ footer .copyright {
 }
 
 @media screen and (max-width: 768px) {
+  footer {
+    margin-top: 7rem;
+  }
   footer .row {
     flex-direction: column;
   }
