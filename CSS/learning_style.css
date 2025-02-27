@@ -133,9 +133,8 @@ main {
   font-size: 28px;
   font-weight: 700;
   text-align: center;
-  margin: 1rem 0;
+  margin-bottom:1rem;
 }
-
 .container1 .row,
 .container2 .row {
   width: 100%;
@@ -272,6 +271,7 @@ main {
 @media (max-width: 768px) {
   .container1 .container1-heading {
     font-size: 24px;
+    margin-top: .5rem;
   }
 
   .card {
@@ -295,6 +295,7 @@ main {
 
   .container1 .container1-heading {
     font-size: 22px;
+    margin-top: 1rem;
   }
 
   .card {
