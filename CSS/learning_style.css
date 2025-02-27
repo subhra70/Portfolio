@@ -134,7 +134,7 @@ main {
   font-size: 28px;
   font-weight: 700;
   text-align: center;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
 }
 .container1 .row,
 .container2 .row {
@@ -169,18 +169,18 @@ main {
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-.arrow{
-    display: flex;
-    justify-content: center;
-    gap: .5rem;
+.arrow {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
 }
 .arrow .left-arrow i,
-.arrow .right-arrow i{
-    cursor: pointer;
-    font-size: 24px;
+.arrow .right-arrow i {
+  cursor: pointer;
+  font-size: 24px;
 }
 .container1 .card:hover,
- .container2 .card:hover{
+.container2 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
@@ -216,12 +216,12 @@ main {
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
 }
-.container2 .row .card .channel-link a{
-    text-decoration: none;
-    color: blue;
+.container2 .row .card .channel-link a {
+  text-decoration: none;
+  color: blue;
 }
-.container2 .row .card .channel-link a:hover{
-    color: green;
+.container2 .row .card .channel-link a:hover {
+  color: green;
 }
 .container1 .card .status button:hover,
 .container2 .card .status button:hover {
@@ -257,7 +257,7 @@ main {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .container1 .row {
     flex-direction: column;
     align-items: center;
@@ -267,10 +267,11 @@ main {
     width: 90%;
     max-width: 400px;
   }
-}
+} */
 
 @media (max-width: 768px) {
-  .container1 .container1-heading {
+  .container1 .container1-heading,
+  .container2 .container2-heading {
     font-size: 24px;
   }
 
@@ -293,7 +294,8 @@ main {
     margin-top: 4rem;
   }
 
-  .container1 .container1-heading {
+  .container1 .container1-heading,
+  .container2 .container2-heading {
     font-size: 22px;
   }
 
