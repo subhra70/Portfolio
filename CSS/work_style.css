@@ -58,7 +58,9 @@ body {
   background-color: #007bff;
   border-radius: 10px;
 }
-
+.left-side{
+  display: flex;
+}
 .menu-toggle {
   display: none;
 }
@@ -68,7 +70,24 @@ body {
   cursor: pointer;
   display: none;
 }
-
+.container .arrow {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: black;
+}
+.leftArrow {
+  cursor: pointer;
+}
+.rightArrow {
+  cursor: pointer;
+}
+.leftArrow:hover {
+  color: red;
+}
+.rightArrow:hover {
+  color: red;
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
   .container {
@@ -152,6 +171,9 @@ main .container {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
 }
+.container .left-part .img-box {
+  display: flex;
+}
 
 .container .left-part .buttons {
   display: flex;
@@ -197,6 +219,8 @@ main .container {
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
+  border: 1px solid black;
+  margin-top: 5px;
 }
 
 .container .right-part .row:hover {
@@ -222,9 +246,10 @@ main .container {
 .container .right-part .row .buttons {
   display: none;
 }
-#users{
-    color: rgb(163, 141, 20);
-  }
+#users {
+  color: rgb(163, 141, 20);
+}
+
 
 @media (max-width: 1024px) {
   .main-content {
