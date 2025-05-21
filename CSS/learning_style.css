@@ -231,28 +231,30 @@ main {
 /* First two cards: Light Red Button */
 .container1 .card:nth-child(1) .status button,
 .container1 .card:nth-child(2) .status button,
-.container2 .card:nth-child(1) .status button {
+.container2 .card:nth-child(1) .status button,
+.container2 .card:nth-child(2) .status button,
+.container2 .card:nth-child(3) .status button {
   background-color: #e45050;
   color: white;
 }
 
 .container1 .card:nth-child(1) .status button:hover,
 .container1 .card:nth-child(2) .status button:hover,
-.container2 .card:nth-child(1) .status button:hover {
+.container2 .card:nth-child(1) .status button:hover,
+.container2 .card:nth-child(2) .status button:hover,
+.container2 .card:nth-child(3) .status button:hover {
   background-color: #e60000;
 }
 
 /* Last card: Light Green Button */
 .container1 .card:nth-child(3) .status button,
-.container2 .card:nth-child(2) .status button,
-.container2 .card:nth-child(3) .status button {
+.container2 .card:nth-child(4) .status button {
   background-color: #4ecb4e;
   color: white;
 }
 
 .container1 .card:nth-child(3) .status button:hover,
-.container2 .card:nth-child(2) .status button:hover,
-.container3 .card:nth-child(3) .status button:hover {
+.container2 .card:nth-child(4) .status button:hover {
   background-color: #009900;
 }
 
