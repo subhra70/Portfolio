@@ -66,7 +66,7 @@ const leftPart = [
       `<a href="https://repository.singurgovtcollege.org/">
               <button>Site Link</button>
             </a>`,
-      `<a href="document_management_system.pdf">
+      `<a href="document_management_system.pdf" target="_blank">
               <button>Check More</button>
             </a>`,
     ],
