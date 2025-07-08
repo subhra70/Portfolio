@@ -140,6 +140,53 @@ const leftPart = [
       ``,
     ],
   },
+  {
+    img: [
+      `<img
+              src="images/parivrajakImg.png"
+              alt="parivrajak"
+              height="200"
+              width="400"
+            />`,
+      `<img
+              src="images/userLogin.png"
+              alt="userLogin-img"
+              height="200"
+              width="400"
+            />`,
+            `<img
+              src="images/orgLogin.png"
+              alt="orgLogin-img"
+              height="200"
+              width="400"
+            />`,
+            `<img
+              src="images/orgSignup.png"
+              alt="orgSignup-img"
+              height="200"
+              width="400"
+            />`,
+    ],
+    heading: "<p>Parivrajak : A Tour Guide Platform</p>",
+    description: `<p>
+              Parivrajak is a full-stack web
+                  application for travel guidance, bringing multiple tour
+                  organizers onto a single platform to offer users a wide range
+                  of travel package options. Users can compare prices and
+                  accommodation facilities across different organizers before
+                  making a selection.
+                  Tour organizers simply purchase their storage to post their tour. They can create a new post, update existing post
+                  and also can delete the post. Organizer also can show the purchase history.
+                  User can simply login in Parivrajak and can view, save and purchase packages. User can see their saved history and purchase history.
+                  User can contact organizer if they want some changes in their package.
+            </p>`,
+    buttons: [
+      `<a href="https://parivrajak.vercel.app/">
+              <button>Site Link</button>
+            </a>`,
+      ``,
+    ],
+  },
 ];
 
 /* Default scenario of left part */
